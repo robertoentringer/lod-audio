@@ -1,24 +1,22 @@
 {
   "name": "lod-audio",
-  "version": "0.0.12",
+  "version": "0.0.0-development",
   "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD)",
   "main": "$npm_package_bin_lod_audio",
   "bin": {
-    "lod-audio": "bin/lod-audio.js"
+    "lod-audio": "./bin/lod-audio.js"
   },
   "files": [
-    "bin/*.js"
+    "./bin/*.js"
   ],
   "scripts": {
     "start": "node $npm_package_bin_lod_audio",
-    "lint": "eslint --fix  bin/*.js --fix",
-    "prepack": "npm run lint",
-    "version": "npm run lint && git add -A",
-    "postversion": "git push && git push --tags"
+    "lint": "eslint --fix  ./bin/**/*.js --fix",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robertoentringer/lod-audio.git"
+    "url": "https://github.com/robertoentringer/lod-audio.git"
   },
   "keywords": [
     "tar",
@@ -48,14 +46,15 @@
   },
   "homepage": "https://github.com/robertoentringer/lod-audio#readme",
   "dependencies": {
-    "lod-opendata": "0.0.15",
-    "tar": "^4.4.10",
-    "xml-flow": "^1.0.3"
+    "lod-opendata": "0.0.22",
+    "tar": "^6.0.2",
+    "xml-flow": "^1.0.4"
   },
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2"
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "semantic-release": "^17.1.1"
   }
 }
