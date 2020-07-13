@@ -1,17 +1,17 @@
 {
   "name": "lod-audio",
   "version": "0.0.0-development",
-  "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD)",
-  "main": "$npm_package_bin_lod_audio",
+  "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD).",
+  "main": "bin/lod-audio.js",
   "bin": {
-    "lod-audio": "./bin/lod-audio.js"
+    "lod-audio": "bin/lod-audio.js"
   },
   "files": [
-    "./bin/*.js"
+    "bin/*.js"
   ],
   "scripts": {
-    "start": "node $npm_package_bin_lod_audio",
-    "lint": "eslint --fix  ./bin/**/*.js --fix",
+    "start": "node bin/lod-audio.js",
+    "lint": "eslint --fix  bin/**/*.js --fix",
     "semantic-release": "semantic-release"
   },
   "repository": {
