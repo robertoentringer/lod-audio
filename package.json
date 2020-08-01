@@ -4,7 +4,7 @@
   "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD).",
   "main": "bin/lod-audio.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "bin": {
     "lod-audio": "bin/lod-audio.js"
