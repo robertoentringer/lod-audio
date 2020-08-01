@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD).",
   "main": "bin/lod-audio.js",
+  "engines": {
+    "node": ">=8"
+  },
   "bin": {
     "lod-audio": "bin/lod-audio.js"
   },
