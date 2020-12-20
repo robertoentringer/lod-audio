@@ -1,6 +1,6 @@
 {
   "name": "lod-audio",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A package for extract audio data of the Lëtzebuerger Online Dictionnaire (LOD)",
   "main": "bin/lod-audio.js",
   "engines": {
