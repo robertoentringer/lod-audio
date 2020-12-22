@@ -50,7 +50,7 @@ const main = async () => {
     resources: [{ format, url }]
   } = await opendata(fields)
 
-  const basedir = path.basename(url, `.${format}`)
+  const basedir = process.argv.slice(2).join('-') || path.basename(url, `.${format}`)
 
   try {
     if (!fs.existsSync(basedir)) fs.mkdirSync(basedir)
