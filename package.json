@@ -15,7 +15,12 @@
   "scripts": {
     "start": "node bin/lod-audio.js",
     "lint": "eslint --fix  bin/**/*.js --fix",
-    "prepublishOnly": "npm run lint && npm version patch && git push && git push --tags"
+    "preversion": "npm run lint",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags",
+    "publish:path": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish"
   },
   "repository": {
     "type": "git",
